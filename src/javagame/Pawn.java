@@ -1,6 +1,7 @@
 package javagame;
 
 import java.awt.Rectangle;
+import java.util.Random;
 
 import org.newdawn.slick.Color;
 import org.newdawn.slick.GameContainer;
@@ -183,8 +184,10 @@ public class Pawn extends Enemy {
         
       }
       else {
+    	Random rand = new Random();
+    	
         y1 -= 0.3f * delta;
-        x2 += 0.22f * delta;
+        x2 += 0.30f * delta;
         y2 -= 0.22f * delta;
         x3 += 0.3f * delta;
         x4 += 0.22f * delta;

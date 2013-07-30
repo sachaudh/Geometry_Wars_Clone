@@ -173,6 +173,7 @@ public class Player extends Entity{
           if(Game.lives > 0) {
             Game.startRound();
             revive();
+            Game.restarting();
           }
           else {
         	Highscores.getInstance().addScore(Game.score);
@@ -201,6 +202,7 @@ public class Player extends Entity{
       y = 300;
       currentX = x;
       currentY = y;
+      i = 0;
     }
     
     public static Vector2f getPlayerLocation() {
